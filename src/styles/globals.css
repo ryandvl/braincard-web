@@ -25,7 +25,12 @@ html {
   color: var(--prefers-text-color);
 }
 
-html > body {
-  margin: 0;
-  padding-top: 0;
+html.light > body {
+  background-color: var(--light-background-color);
+  color: var(--light-text-color);
+}
+
+html.dark > body {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
 }

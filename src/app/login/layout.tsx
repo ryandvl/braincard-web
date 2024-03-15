@@ -4,7 +4,7 @@ import { getMetadata } from "@/utils/metadata";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = getMetadata("Home", "Memorize with Flashcards!");
+export const metadata = getMetadata("Login", "Memorize with Flashcards!");
 
 export default function RootLayout({
   children,

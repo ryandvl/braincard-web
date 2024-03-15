@@ -1,7 +1,9 @@
+import { Header } from "@/components/header/header";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Hello World!</h1>
+    <main className="flex justify-center py-8 px-24">
+      <Header />
     </main>
   );
 }
