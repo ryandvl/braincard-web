@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --light-background-color: #fafafa; /* zinc-50 */
+  --light-text-color: #09090b; /* zinc-950 */
+
+  --dark-background-color: #09090b;
+  --dark-text-color: #fafafa;
+
+  --prefers-background-color: var(--light-background-color);
+  --prefers-text-color: var(--light-text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --prefers-background-color: var(--dark-background-color);
+    --prefers-text-color: var(--dark-text-color);
+  }
+}
+
+html {
+  background-color: var(--prefers-background-color);
+  color: var(--prefers-text-color);
+}
+
+html > body {
+  background: linear-gradient(
+    to bottom,
+    var(--dark-background-color) 70%,
+    #00091c 90%
+  );
+  color: var(--prefers-text-color);
+}
